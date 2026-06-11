@@ -27,18 +27,18 @@ direction = input("You're at a cross road. "
                   "Where do you want to go?\n   "
                   "Type left or right\n")
 
-if direction == "left":
+if direction == "left" or direction == "Left" or direction == "LEFT":
     swim = input("You've come to a lake. There is an island  "
                  "in the middle of the lake\n  "
                  "Type 'wait' to wait or 'swim' to swim across\n")
-    if swim == "wait":
+    if swim == "wait" or swim == "Wait" or swim == "WAIT":
         door = input("You arrive at the island. Pick a door of the 3:\n  "
                      "One Red, Blue, and Yellow. What do you pick?\n")
-        if door == "yellow":
+        if door == "yellow" or door == "Yellow" or door == "YELLOW":
             print("YOU WIN")
-        elif door == "red":
+        elif door == "red" or door == "Red" or door == "RED":
             print("You we burned by fire: GAME OVER!")
-        elif door == "blue":
+        elif door == "blue" or door == "Blue" or door == "BLUE":
             print("You were eaten by beasts: GAME OVER!")
         else:
             print("GAME OVER!")
